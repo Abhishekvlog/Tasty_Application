@@ -3,17 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".View.fragments.DiscoverFragment">
+    tools:context=".view.fragments.DiscoverFragment">
 
+
+    <TextView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:hint="Search..."
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:queryHint="Enter Dish Name"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/searchview_bg"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+        android:id="@+id/mainRecyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/fooditem_view" />
+        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

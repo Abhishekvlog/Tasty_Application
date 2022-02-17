@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.FoodDetailActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tvdishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cinnamon_roll_french_toast_roll_up"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <VideoView
+        android:id="@+id/vvdishVideo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdishName"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="474dp" />
+
+    <TextView
+        android:id="@+id/tvNutritionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrition Info"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvdishVideo" />
+
+    <TextView
+        android:id="@+id/tvCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calories"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvNutritionInfo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNutritionInfo"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCalories"
+        android:layout_marginVertical="5dp"
+        android:background="#D3D3D3"
+        />
+
+
+    <TextView
+        android:id="@+id/tvFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fat"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvCalories"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCalories"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFat"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvCarbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="carbohydrates"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvFat"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/carbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFat"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCarbohydrates"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tvFiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fiber"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvCarbohydrates"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/fiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarbohydrates"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFiber"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3"
+        />
+
+    <TextView
+        android:id="@+id/tvSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sugar"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvFiber"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFiber"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSugar"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="protein"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvSugar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSugar"
+        android:layout_marginVertical="5dp"
+        android:text="422"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3"
+        app:layout_constraintTop_toBottomOf="@id/tvProtein" />
+
+
+    <TextView
+        android:id="@+id/tvPreparation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparation"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginVertical="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProtein" />
+
+
+      <Button
+          android:id="@+id/btnPreparation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="6dp"
+         android:backgroundTint="@android:color/holo_red_light"
+          android:layout_marginTop="10dp"
+          android:text="Step-by-step mode"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tvPreparation"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPreapartion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnPreparation"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
+
+
+
+

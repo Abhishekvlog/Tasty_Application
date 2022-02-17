@@ -1,5 +1,7 @@
 package com.example.tasty.model.remote.api.response
 
+import java.io.Serializable
+
 data class InstructionXX(
     val appliance: Any,
     val display_text: String,
@@ -8,4 +10,4 @@ data class InstructionXX(
     val position: Int,
     val start_time: Int,
     val temperature: Any
-)
+):Serializable

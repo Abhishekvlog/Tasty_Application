@@ -1,5 +1,7 @@
 package com.example.tasty.model.remote.api.response
 
+import java.io.Serializable
+
 data class Recipe(
     val _id: Int,
     val _index: String,
@@ -55,4 +57,4 @@ data class Recipe(
     val video_id: Int,
     val video_url: String,
     val yields: String
-)
+):Serializable

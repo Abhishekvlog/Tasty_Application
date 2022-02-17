@@ -1,11 +1,11 @@
-package com.example.tasty.View
+package com.example.tasty.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.tasty.R
-import com.example.tasty.View.fragments.DiscoverFragment
-import com.example.tasty.View.fragments.RecipeFragment
+import com.example.tasty.view.fragments.DiscoverFragment
+import com.example.tasty.view.fragments.RecipeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 

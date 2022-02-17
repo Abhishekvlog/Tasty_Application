@@ -1,5 +1,7 @@
 package com.example.tasty.model.remote.api.response
 
+import java.io.Serializable
+
 data class RenditionX(
     val aspect: String,
     val bit_rate: Any,
@@ -14,4 +16,4 @@ data class RenditionX(
     val poster_url: String,
     val url: String,
     val width: Int
-)
+):Serializable

@@ -1,4 +1,4 @@
-package com.example.tasty.View.fragments
+package com.example.tasty.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -18,5 +18,4 @@ class RecipeFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_recipe, container, false)
     }
-
 }

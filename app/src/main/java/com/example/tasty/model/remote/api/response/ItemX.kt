@@ -1,7 +1,9 @@
 package com.example.tasty.model.remote.api.response
 
-import androidx.room.Entity
-
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+import kotlinx.android.parcel.RawValue
+import java.io.Serializable
 data class ItemX(
     val approved_at: Int,
     val aspect_ratio: String,
@@ -54,4 +56,4 @@ data class ItemX(
     val video_id: Int,
     val video_url: String,
     val yields: String
-)
+):Serializable

@@ -2,4 +2,8 @@
     <string name="app_name">TASTY</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">name</string>
+    <string name="pizza">Pizza</string>
+    <string name="cinnamon_roll_french_toast_roll_up">Cinnamon Roll French Toast Roll-up</string>
+    <string name="chicken">chicken</string>
 </resources>

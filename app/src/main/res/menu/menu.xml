@@ -7,7 +7,7 @@
 
     <item
         android:id="@+id/icon_recipe"
-        android:icon="@drawable/recipe"
+        android:icon="@drawable/like"
         android:title="My Recipes" />
 
 </menu>

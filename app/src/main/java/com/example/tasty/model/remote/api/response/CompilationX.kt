@@ -1,5 +1,7 @@
 package com.example.tasty.model.remote.api.response
 
+import java.io.Serializable
+
 data class CompilationX(
     val approved_at: Int,
     val aspect_ratio: String,
@@ -23,4 +25,4 @@ data class CompilationX(
     val thumbnail_url: String,
     val video_id: Int,
     val video_url: String
-)
+):Serializable
